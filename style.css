@@ -1,0 +1,1279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main-container{
+    background-color: black;
+    overflow: hidden;
+    
+}
+
+body,html{
+    font-family: my3;
+    color: white;
+    background-color: black;
+}
+
+
+@font-face {
+    font-family: my1;
+    src: url(assets/fonts/euclidsquare-medium.woff);
+}
+
+@font-face {
+    font-family: my2;
+    src: url(assets/fonts/euclidsquare-regular.woff);
+}
+
+@font-face {
+    font-family: my3;
+    src: url(assets/fonts/NetflixSans_W_Bd.woff2);
+}
+
+@font-face {
+    font-family: my4;
+    src: url(assets/fonts/NetflixSans_W_Blk.woff2);
+}
+
+@font-face {
+    font-family: my5;
+    src: url(assets/fonts/NetflixSans_W_Md.woff2);
+}
+
+@font-face {
+    font-family: my6;
+    src: url(assets/fonts/NetflixSans_W_Rg.woff2);
+}
+
+
+
+
+/* 
+.firstpage{
+    background: url(https://assets.nflxext.com/ffe/siteui/vlv3/00103100-5b45-4d4f-af32-342649f1bda5/64774cd8-5c3a-4823-a0bb-1610d6971bd4/IN-en-20230821-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    scale: 1.3;
+    background-position-y: -145px;
+    image-rendering: optimizeQuality;
+    filter: saturate(1.2);
+    filter: brightness(1.5);
+    filter: blur(0.5px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.firstpage::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.495);
+    overflow: hidden;
+}
+
+.main-container{
+    position: relative;
+    display: flex;
+}
+
+
+.main-container #nav{
+    min-height: 10vh;
+    width: 100vw;
+   background-color: crimson;
+    display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  display: flex;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+#navlogo img{
+   height: 40px;
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.bottomContent{
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+} */
+
+
+
+#nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 86px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 174.6px;
+    z-index: 10;
+    /* background-color: crimson; */
+}
+
+
+#nav img{
+    height: 40px;
+    display: flex;
+    
+}
+
+
+#navRight{
+    display: flex;
+    position: absolute;
+    right: 15%;
+    gap: 30px;
+}
+
+.firstpage{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background:radial-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)), url(https://assets.nflxext.com/ffe/siteui/vlv3/00103100-5b45-4d4f-af32-342649f1bda5/64774cd8-5c3a-4823-a0bb-1610d6971bd4/IN-en-20230821-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.bottomContent{
+    margin-top: 6%;
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomContent h1{
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    font-family: my5;
+    letter-spacing: 1px;
+    
+
+}
+
+.bottomContent h3{
+    font-size: 24px;
+    font-weight: 200;
+    font-family: my6;
+    text-align: center;
+    margin: 10px 0;
+    line-height: 40px;
+
+}
+.bottomContent p{
+    font-size: 20px;
+    font-weight: 100;
+    font-family: my2;
+    text-align: center;
+    margin: 8px 10px 10px 10px;
+}
+
+
+.bottomContent #form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    height: 55px;
+    margin-top: 15px;
+}
+/* #form input{
+    padding: 24px 16px 8px; 
+}*/
+    
+
+#form button{
+    /* CSS Inspector (https://www.netflix.com/in/) */ 
+
+
+	/* align-items: center;
+	background-color: rgb(193, 17, 25);
+	border-radius: 4px;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	display: flex;
+	fill: rgb(255, 255, 255);
+	font-size: 24px;
+	font-weight: 500;
+    align-items: center;
+	justify-content: center;
+	margin: 0px 0px 0px 8px;
+    min-height: 56px;
+	padding: 12px 24px;
+	place-content: normal center;
+	place-items: center normal;	text-align: center;
+    outline: none;
+	border: none; */
+}
+
+
+
+.bottomContent #form #email{
+    background-color: rgba(0, 0, 0, 0.319);
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.277);
+    padding: 16px 8px;
+    width: 25%;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.bottomContent #form #email::placeholder{
+    color: rgba(255, 255, 255, 0.729);
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+
+.bottomContent #form #GetStartedButton{
+    padding: 16px 0px;
+    border-radius: 4px;
+    background-color:#E50914;
+    border: none;
+    color: white;
+    font-size: 24px;
+    width: 201px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 55px;
+    
+}
+.bottomContent #form #GetStartedButton .ri-arrow-right-s-line{
+   
+   font-size: 24px;
+    
+}
+
+
+/* 
+#email{
+    outline: none;
+    border-radius: 5px;
+    display: flex;
+    padding: 20px 10px;
+    font-size: 16px;
+    width: 30%;
+    
+} */
+#form{
+    padding: 10px;
+}
+
+
+
+.divider{
+    border-bottom: 7px solid #232323;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* Navigation code */
+
+
+
+.dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    gap: 3px;
+    border-radius: 4px;
+}
+
+
+
+.dropdown #language {
+padding: 6px 0px;
+background-color: transparent;
+color: white;
+border: none;
+font-size: 16px;
+outline: none;
+}
+
+
+.ri-global-line{
+    font-size: 20px;
+}
+
+
+.NavButton button{
+    padding: 10px 20px;
+    background-color: #E50914;
+    border: none;
+    border-radius: 4px ;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+/* secondpage code */
+
+.secondPage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 72px 0;
+    margin: 0px 175px 0px 174px;
+    height: 80vh;
+    position: relative;
+    
+}
+
+#secondleft{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    width: auto;
+}
+
+.secondPage #secondleft h2{
+    font-size: 48px;
+    padding: 0 0 10px 0;
+    text-align: left;
+    width: auto;
+}
+
+.secondPage #secondleft h4{
+    font-size: 24px;
+    padding: 10px;
+    padding: 0 0 10px 0;
+    font-family: my6;
+    font-weight: 400;
+}
+
+
+.divider2{
+border-bottom: 7px solid #232323;
+width: 100%;
+/* height: 10%; */
+}
+
+/* video code on tv */
+.secondPage{
+    width: auto;
+    
+}
+
+.secondPage #secondright{
+    width: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.secondPage #secondright img{
+    position: relative;
+    z-index: 2;
+}
+
+.secondPage #secondright video{
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+
+
+/* page 3 start code */
+
+
+
+.page3{
+    display: flex;
+    width: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 0 175px;
+    padding: 72px 0 72px 0;
+}
+
+.page3left{
+   flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.page3right{
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pag3left .page3leftimage{
+    /* width: 10px; */
+    /* scale: 0.9; */
+    
+
+}
+
+
+
+
+
+#page3leftimg img{
+    width: 57.14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page3leftdownload img{
+    width: 48px;
+}
+
+
+#page3lefttext h4{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: my6;
+    white-space: nowrap;
+    padding-bottom: 2px;
+}
+
+.page3leftimage{
+    position: relative;
+}
+
+
+#page3leftimg{
+flex: 1;
+}
+
+#page3lefttext{
+flex: 2;
+}
+
+#page3leftdownload{
+flex: 1;
+}
+
+.page3leftbox{
+    /* position: relative; */
+    border: 2px solid rgba(255, 255, 255, 0.433);
+    padding: 8px;
+    
+}
+
+.page3leftbox{
+    display: flex;
+    width: 52%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 6%;
+    left: 23.7%;
+    border-radius: 12px;
+    background-color: black;
+}
+
+
+.page3leftimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#page3leftimg,#page3lefttext,#page3leftdownload{
+    padding-left: 3px;
+    padding-right: 10px;
+}
+
+.pag3left{
+position: relative;
+}
+
+.page3right h2{
+    font-size: 48px;
+    font-weight: 900;
+    font-family: my5;
+}
+.page3right p{
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 16px;
+    font-family: my6;
+}
+
+
+#page3lefttext p{
+    font-size: 14px;
+    font-weight: 100;
+    color: #0071EB;
+    font-family: my6;
+    /* padding: 0 10px; */
+    line-height: 35px;
+}
+
+
+.page4{
+    display: flex;
+    padding: 72px 0;
+    height: auto;
+    margin: 0 175px;
+    position: relative;
+
+}
+
+
+.page4 .page4left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.page4 .page4left h2{
+font-size:48px;
+font-weight: 900;
+font-family:my5;
+}
+
+.page4 .page4left p{
+    font-size:24px;
+    font-weight: 400;
+    font-family:my6;
+    }
+
+    .page4right{
+        position: relative;
+        display:flex;
+    }
+
+
+    .page4right .page4frame img{
+        position: relative;
+        z-index:2;
+    }
+    .page4right .page4frame video{
+        position: absolute;
+        left: 11.98%;
+        top: 8%;
+        z-index: 1;
+        scale: 0.889;
+
+    }
+
+
+    .page5{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 175px;
+        padding: 72px 0;
+    }
+
+    .page5left{
+        flex: 1;
+    }
+    .page5right{
+        flex: 1;
+    }
+
+    .page5left img{
+        flex: 1;
+    }
+
+    .page5right p{
+        font-size: 24px;
+        font-family: my6;
+        margin-top: 16px;
+        text-align: left;
+    }
+    .page5 .page5right h2{
+        font-size: 46px;
+        font-weight: 900;
+        font-family: my4;
+    }
+
+/* page6 code starts here */
+
+
+.page6{
+    padding: 72px 0;
+    /* margin: 0 175px; */
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    width: auto;
+}
+
+.page6heading{
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+    font-family: my5;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+
+
+.page6 .faq {
+    width: 75%;
+    background-color: #2D2D2D;
+    padding: 24px;
+    margin-bottom: 10px;
+}
+
+.page6 .faq .faqboxes h3{
+    font-size: 24px;
+    font-family: my6;
+    font-weight: 400;
+}
+
+
+.page6 .faq{
+    cursor: pointer;
+}
+
+
+.faq{
+    display: flex;
+    position: relative;
+}
+
+.faq .faqicon{
+    display: flex;
+    position: absolute;
+    right: 3%;
+    top:22% ;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq .faqicon i{
+    font-size: 40px;
+}
+
+
+/* 
+.bottomform{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 15px;
+    width: 100%;
+} */
+
+#bottomlastp{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: my6;
+}
+
+
+#formbottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+#formbottom #emailbottom,#GetStartedButtonbottom{
+    height: 55px;
+    
+    border: none;
+    box-shadow: none;
+    background:none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+#formbottom #emailbottom{
+    background-color: rgba(0, 0, 0, 0.33);
+    border: 1px solid rgba(255, 255, 255, 0.353);
+    width: 377px;
+}
+
+#formbottom #emailbottom::placeholder{
+    padding-left: 13px;
+    font-weight: 400;
+    font-family: 600;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.595);
+}
+
+#GetStartedButtonbottom{
+    background-color: #E50914;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: my6;
+    padding: 12px 24px;
+}
+
+#GetStartedButtonbottom .ri-arrow-right-s-line{
+    padding-left: 3px;
+}
+
+.page7{
+    margin-left: 200px;
+    padding: 60px 0;
+}
+
+
+.footerlink{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 20%;
+}
+
+.page7 #toppara{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 0;
+    /* margin-left: 14.7%; */
+    /* margin-top: 3.8%; */
+    margin-bottom: 2%;
+    font-family: my6;
+    color: rgba(255, 255, 255, 0.674);
+
+}
+
+
+.footerdivcontent p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: my6;
+    line-height: 21px;
+    text-decoration: underline;
+    padding-bottom: 8px;
+    color: rgba(255, 255, 255, 0.736);
+    letter-spacing: 0.2px;
+}
+
+.languagebottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    /* position: relative; */
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    gap: 1px;
+    border-radius: 4px;
+    width: 10.9%;
+    padding: 5px 20px;
+    margin: 20px;
+    margin-left: 0;
+}
+
+.lang select{
+    padding: 6px 0px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    outline: none;
+
+}
+
+#lstpara{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: my6;
+    color: rgba(255, 255, 255, 0.755);
+}
+
+
+
+/* media query code 👇👇👇👇👇 */
+
+@media(max-width:650px){
+    #nav{
+        width: 100%;
+        display: flex;
+        gap: 0;
+        align-items: center;
+        padding: 0;
+        left: 0;
+        top: 12px;
+        height: 10%;
+        position: absolute;
+    }
+
+    #nav img{
+        height: 40px;
+        display: flex;
+        align-items: flex-start;
+        padding-left: 20px;
+        
+    }
+
+    #navRight{
+        display: flex;
+        position: absolute;
+        right: 10px;
+        gap: 10px;
+    }
+
+    #language{
+        display: none;
+    }
+    
+    .bottomContent{
+        padding: 20px;
+    }
+
+    .bottomContent h1{
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .bottomContent h3 {
+        
+        margin: 5px 0;
+      
+    }
+
+    .bottomContent h3{
+        font-size: 1.125rem;
+        line-height: 30px;
+        padding: 10px;
+    }
+
+    .bottomContent p{
+        font-size: 1.125rem;
+        font-weight: 100;
+        font-family: my2;
+        text-align: center;
+        margin: 2px 10px 10px 10px;
+    }
+
+    .bottomContent #form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        width: 100%;
+        height: 55px;
+        margin-top: 46px;
+    }
+
+    .bottomContent #form #email {
+        width: 90%;
+       
+    }
+
+    .bottomContent #form #GetStartedButton{
+        padding: 12px 0px;
+        font-size: 18px;
+        width: 160px;
+        font-weight: 700;
+        height: 50px;
+    }
+
+    .firstpage{
+        height: 75vh;
+    }
+
+
+/* secondpage */
+
+.secondPage {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 10px 10px;
+    margin: 10px;
+    height: auto;
+    /* position: relative; */
+}
+
+.secondPage #secondleft h2 {
+    font-size: 32px;
+    padding: 0 0 10px 0;
+    text-align: center;
+    width: auto;
+}
+
+.secondPage #secondleft h4 {
+    font-size: 18px;
+    padding: 10px;
+    padding: 0 0 10px 0;
+    font-family: my6;
+    font-weight: 200;
+    text-align: center;
+}
+
+
+.secondPage #secondright {
+    overflow: hidden;
+}
+
+#secondleft {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-top: 10%;
+}
+
+.secondPage #secondright img {
+    width: 100%;
+}
+
+.secondPage #secondright video {
+    width: 100%;
+}
+
+.page3 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.page3right h2 {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: my5;
+    text-align: center;
+    /* padding: 45px 25px; */
+}
+
+.page3right{
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.page3right p {
+    font-size: 18px;
+    font-weight: 200;
+    padding-top: 16px;
+    font-family: my6;
+    text-align: center;
+    padding: 15px 2px;
+}
+
+.pag3left {
+    position: relative;
+    scale: 0.5;
+    /* padding: 0; */
+}
+
+.pag3left {
+    position: relative;
+    scale: 0.5;
+    /* padding: 0; */
+    margin-top: -120px;
+}
+
+.page3right h2 {
+    padding: 25px 10px 0 10px;
+}
+
+.page4 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+    margin: 20px;
+    position: relative;
+}
+
+.page4 .page4left h2{
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.page4 .page4left p{
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.page4 .page4left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav img {
+    height: 30px;
+}
+
+
+.bottomContent h1 {
+    /* font-size: 1.8rem; */
+    /* font-weight: 600; */
+    margin-top: 10%;
+}
+
+.page4 {
+    padding: 43px 10px;
+    margin-bottom: 30%;
+    margin-top: 10%;
+}
+
+.page4right .page4frame img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.page4right{
+    
+    position: relative;
+}
+
+.page4right .page4frame video {
+    position: relative;
+    /* top: 0; */
+    /* left: 0; */
+    width: 73%;
+    overflow: hidden;
+    z-index: 0;
+    left: 12%;
+    top: 15%;
+    
+}
+
+
+
+.page5left img {
+    width: 100%;
+}
+
+.page5 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px;
+    padding: 45px 20px;
+    gap: 30px;
+}
+
+
+.page5 .page5right h2 {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: my4;
+    text-align: center;
+}
+
+.page5right p{
+    font-size: 18px;
+    font-family: my6;
+    margin-top: 16px;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+.page6 .faq .faqboxes h3 {
+    font-size: 18px;
+    font-family: my6;
+    font-weight: 400;
+}
+
+.page6heading {
+    font-size: 22px;
+    font-weight: 700;
+    /* text-align: center; */
+    font-family: my1;
+    /* letter-spacing: 1px; */
+    /* margin-bottom: 25px; */
+}
+
+.page6 .faq {
+    width: 85%;
+    
+}
+
+.faq .faqicon i {
+    font-size: 20px;
+}
+
+.faq .faqicon {
+    display: flex;
+    position: absolute;
+    right: 3%;
+    top: 36%;
+    font-weight: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#bottomlastp {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: my6;
+    padding: 10px 40px;
+    text-align: center;
+}
+
+#formbottom {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* gap: 8px; */
+}
+
+
+#formbottom #emailbottom {
+    /* background-color: rgba(0, 0, 0, 0.33); */
+    /* border: 1px solid rgba(255, 255, 255, 0.353); */
+    width: 75%;
+}
+
+
+
+#formbottom #emailbottom,#GetStartedButtonbottom{
+    height: 50px;
+}
+
+
+#GetStartedButtonbottom {
+    /* background-color: #E50914; */
+    /* color: white; */
+    font-size: 17px;
+    font-weight: 600;
+    font-family: my2;
+    padding: 8px 12px;
+    color: rgba(255, 255, 255, 0.942);
+}
+
+#formbottom {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 15px;
+}
+
+.bottomform {
+    width: 100%;
+}
+
+
+
+.page7 {
+    margin-left: 0;
+    padding: 60px 20px;
+}
+
+.footerlink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+}
+
+
+.footerdivcontent p {
+    font-size: 13px;
+    font-weight: 200;
+    font-family: 'my2';
+    line-height: 20px;
+    text-decoration: underline;
+    padding-bottom: 12px;
+    color: rgba(255, 255, 255, 0.736);
+    letter-spacing: 0.2px;
+}
+
+.languagebottom {
+    width: 42.9%;
+    padding: 3px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
